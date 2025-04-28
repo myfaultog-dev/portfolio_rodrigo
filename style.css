@@ -1,0 +1,205 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: #0a0a0a;
+    color: #fff;
+  }
+  
+  nav {
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+  }
+  
+  nav .logo {
+    font-size: 1.8rem;
+    color: #ff004f;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+    
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #ff004f;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 2rem 2rem 2rem;
+    background: #0f0f0f;
+    min-height: 100vh;
+  }
+  
+  .intro {
+    max-width: 50%;
+  }
+  
+  .intro h1 {
+    font-size: 2.5rem;
+    color: #ff004f;
+    margin-bottom: 1rem;
+  }
+  
+  .intro p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  .social img {
+    width: 40px;
+    margin-right: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .social img:hover {
+    transform: scale(1.1);
+  }
+  
+  .foto img {
+    width: 250px;
+    border-radius: 50%;
+    border: 3px solid #ff004f;
+  }
+  
+  section {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .card {
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0px 0px 15px #ff004f50;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  form button {
+    background: #ff004f;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  form button:hover {
+    background: #e60042;
+  }
+  
+  footer {
+    background: #111;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+  
+    .intro, .foto {
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+  .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #ff004f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #e60042;
+  }
+/* Seção Portfólio */
+.portfolio-section {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.portfolio-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.portfolio-btn {
+  padding: 15px 30px;
+  color: #fff;
+  background: linear-gradient(45deg, #ff004f, #8e2de2);
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 10px #ff004f, 0 0 20px #8e2de2;
+}
+
+.portfolio-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #ff004f, 0 0 30px #8e2de2;
+}
+  
